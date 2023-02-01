@@ -7,11 +7,11 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PeopleImpl implements PeopleRepository {
+public class PeopleRepositoryImpl implements PeopleRepository {
 
     private final Connection connection;
 
-    public PeopleImpl() throws Exception {
+    public PeopleRepositoryImpl() throws Exception {
         connection = new DatabaseConnection().getConnection();
     }
 
